@@ -8,3 +8,9 @@ tsc index.ts && node index.js
 
 ### Task 2
 - Created enumurator and fixing mulitple if statment problem.
+
+### Task 3
+- Created enumurator, type and a module including ternary operator
+
+### Task 4
+- Created company-operations module using what we learned in Task 3
