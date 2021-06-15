@@ -14,3 +14,6 @@ tsc index.ts && node index.js
 
 ### Task 4
 - Created company-operations module using what we learned in Task 3
+
+### Task 5,6
+- Created Employee class 
