@@ -117,10 +117,5 @@
 // console.log(`${boody.name} ${boody.isOldAge()? 'is older than 50' : ' is younger than 50'}`);
 // console.log(`${boody.name} ${boody.hasHighSalary()? 'gets higher than 10000' : 'gets lower than 10000'}`);
 // console.log(`${boody.name} is in department ${boody.getDepartment()}`);
-// :)
-// 7asby allah w ne3ma al wakil
-//  هراجع علي كل ال اختو بكرا من اول tsak-1 => task-6
-// lama nshoooooof
-// (:
 //////////////////////
 // #9
