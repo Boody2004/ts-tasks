@@ -106,3 +106,21 @@
 // getDepartment(employee4);
 // getDepartment(employee5);
 // console.log(`//////////////////////`);
+//////////////////////
+
+// // #8
+// import { Employee } from "./task-6/employee";
+// import { Department } from "./task-6/enum/department";
+
+// const boody = new Employee('boody', 10000, 50, Department.Engineering);
+
+// console.log(`${boody.name} ${boody.isOldAge()? 'is older than 50' : ' is younger than 50'}`);
+// console.log(`${boody.name} ${boody.hasHighSalary()? 'gets higher than 10000' : 'gets lower than 10000'}`);
+// console.log(`${boody.name} is in department ${boody.getDepartment()}`);
+// :)
+// 7asby allah w ne3ma al wakil
+//  هراجع علي كل ال اختو بكرا من اول tsak-1 => task-6
+// lama nshoooooof
+// (:
+//////////////////////
+// #9
