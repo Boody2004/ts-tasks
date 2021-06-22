@@ -12,19 +12,19 @@ export class Employee {
       this.age = age;
       this.department = department;
     }
+    public isOldAge(): boolean {
+      return this.age >= 50
+        ? true
+        : false;
+    }
 
     public hasHighSalary(): boolean {
       return this.salary >= 10000
         ? true
         : false
     }
-    public isOldAge(): boolean {
-      return this.age >= 50
-        ? true
-        : false;
-    }
+    
     public getDepartment(): Department {
       return this.department
-      
     }
 }

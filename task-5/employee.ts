@@ -18,6 +18,7 @@ class Employee {
   public getSalary() {
     console.log(this.salary);
   }
+  
   public setSalary(salary: number) {
     if(salary < this.salary)
       return;
@@ -34,4 +35,3 @@ boody.setSalary(2000);
 boody.getSalary(); // 5000
 boody.setSalary(6000);
 boody.getSalary(); // 6000
-

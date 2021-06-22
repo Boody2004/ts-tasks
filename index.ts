@@ -16,20 +16,20 @@
 
 ///////////////////////////////////////////////////////////////////////////
 
-//// #1
+// // #1
 // import {add} from './task-1/add-function';
 
 // console.log(add(1,5));
 //////////////////////
 
-//// #2
+// #2
 // import { add, subtract } from "./task-1/add-function";
 
 // console.log(add(1,5));
 // console.log(subtract(5,3));
 //////////////////////
 
-//// #3
+// // #3
 // import {add} from "./task-1/add-function";
 // import {subtract} from "./task-1/subtract-function";
 // import {multiply} from "./task-1/multiply-function";
@@ -118,4 +118,18 @@
 // console.log(`${boody.name} ${boody.hasHighSalary()? 'gets higher than 10000' : 'gets lower than 10000'}`);
 // console.log(`${boody.name} is in department ${boody.getDepartment()}`);
 //////////////////////
-// #9
+
+// #9 test
+import { Car } from './task-7-test/car'
+import { Doors } from './task-7-test/enum/doors'
+
+const verna = new Car(1600, Doors.fourDoors, true, 'hyundai', 200)
+
+console.log(verna.getEngine())
+console.log(verna.getDoors())
+console.log(verna.getHasAirBags())
+console.log(verna.getModel())
+console.log(verna.getTopSpeed())
+
+// verna.accelerate(190)
+// verna.break(10)

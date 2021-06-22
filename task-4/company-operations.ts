@@ -3,8 +3,8 @@ import { Employee } from "./types/employee";
 
 export const getHighSalaries = ({name, salary}: Employee) => {
     console.log(salary >= 10000 
-     ? `${name} is getting higher than or equal 10000, current salary is ${salary}`
-     : `${name} is getting lower than 10000, current salary is ${salary}`)
+        ? `${name} is getting higher than or equal 10000, current salary is ${salary}`
+        : `${name} is getting lower than 10000, current salary is ${salary}`)
 };
 export const getOldAges = ({name, age}: Employee) => {
     console.log(age >=50
