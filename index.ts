@@ -119,17 +119,43 @@
 // console.log(`${boody.name} is in department ${boody.getDepartment()}`);
 //////////////////////
 
-// #9 test
-import { Car } from './task-7-test/car'
-import { Doors } from './task-7-test/enum/doors'
+// // #9 test
+// import { Car } from './task-7-test/car'
+// import { Doors } from './task-7-test/enum/doors'
 
-const verna = new Car(1600, Doors.fourDoors, true, 'hyundai', 200)
+// const alto = new Car(800,Doors.FourDoors, false, 'sezoki', 180)
+// const verna = new Car(1600, Doors.FourDoors, false, 'hyundai', 200)
+// const coupe = new Car(1800, Doors.TwoDoors, true, 'kia', 260)
+// const golf = new Car(1800, Doors.FourDoors, true, 'kia', 280)
 
-console.log(verna.getEngine())
-console.log(verna.getDoors())
-console.log(verna.getHasAirBags())
-console.log(verna.getModel())
-console.log(verna.getTopSpeed())
+// console.log(verna.getEngine())
+// console.log(verna.getDoors())
+// console.log(verna.getHasAirBags())
+// console.log(verna.getModel())
+// console.log(verna.getTopSpeed())
+
+// console.log(coupe.getEngine())
+// console.log(coupe.getDoors())
+// console.log(coupe.getHasAirBags())
+// console.log(coupe.getModel())
+// console.log(coupe.getTopSpeed())
+
+// console.log(golf.getEngine())
+// console.log(golf.getDoors())
+// console.log(golf.getHasAirBags())
+// console.log(golf.getModel())
+// console.log(golf.getTopSpeed())
 
 // verna.accelerate(190)
 // verna.break(10)
+
+// coupe.accelerate(190)
+// coupe.break(10)
+
+// golf.accelerate(190)
+// golf.break(10)
+
+// coupe.crash(golf)//No one dies
+// coupe.crash(verna)//Lucky you didn't die
+// alto.crash(golf)//You died!
+// alto.crash(verna) //you both died

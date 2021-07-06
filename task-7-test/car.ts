@@ -1,12 +1,7 @@
 import { Doors } from "./enum/doors";
 export class Car {
-    private engine: number
-    private doors: Doors
-    private hasAirBags: boolean
-    private model: string
-    private topSpeed: number
 
-    constructor(engine: number, doors: Doors, hasAirBags: boolean, model: string, topSpeed: number) {
+    constructor(private engine: number, private doors: Doors, private hasAirBags: boolean, private model: string, private topSpeed: number) {
         this.engine = engine;
         this.doors = doors;
         this.hasAirBags = hasAirBags;
@@ -46,41 +41,46 @@ export class Car {
         this.topSpeed = topSpeed;
     }
 
-    private checkInitalSpeed (initialSpeed: number) {
-        if (initialSpeed < 0 || initialSpeed > this.topSpeed) {
-            return 
-        }
+    private checkInitalSpeed (initialSpeed: number): boolean {
+        return initialSpeed < 0 || initialSpeed > this.topSpeed;
     }
     
     public accelerate(initialSpeed: number): void{
 
-        this.checkInitalSpeed(initialSpeed)
+        if(this.checkInitalSpeed(initialSpeed)) return
         
-        var sped = initialSpeed
+        var speed = initialSpeed
 
         var myTime = setInterval(() => {
-            if (sped < this.topSpeed) {
-                console.log(++sped)
-            }else {
-                clearInterval(myTime);   
-            }
+            speed < this.topSpeed
+                ?console.log(++speed)
+                :clearInterval(myTime);   
         }, 1000);
     }
     public break(initialSpeed: number): void{
 
-        this.checkInitalSpeed(initialSpeed)
+        if(this.checkInitalSpeed(initialSpeed)) return
 
-        var sped = initialSpeed
+        var speed = initialSpeed
 
         var myTime = setInterval(() => {
-            if (sped > 0) {
-                console.log(--sped)
-            }else {
-                clearInterval(myTime);   
-            }
+            speed > 0
+                ?console.log(--speed)
+                :clearInterval(myTime);   
         }, 1000);
     }
     public crash(car: Car): void{
-        
+        if (car.getHasAirBags() && this.getHasAirBags()) {
+            console.log('No one dies')
+        } 
+        if (!car.getHasAirBags() && this.getHasAirBags()) {
+            console.log(`Lucky you didn't die`)
+        } 
+        if (car.getHasAirBags() && !this.getHasAirBags()) {
+            console.log('You died!')
+        } 
+        if (!car.getHasAirBags() && !this.getHasAirBags()) {
+            console.log('You both died!')
+        } 
     }
 }

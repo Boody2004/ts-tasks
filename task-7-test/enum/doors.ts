@@ -1,4 +1,4 @@
 export enum Doors {
-    twoDoors,
-    fourDoors
+    TwoDoors,
+    FourDoors
 }
