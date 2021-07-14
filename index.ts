@@ -159,3 +159,77 @@
 // coupe.crash(verna)//Lucky you didn't die
 // alto.crash(golf)//You died!
 // alto.crash(verna) //you both died
+//////////////////////
+
+// // #10 test prodct
+// import { Catogries } from "./task-8-test/enum/catogries";
+// import { Prodct } from "./task-8-test/prodct";
+
+// const screens = new Prodct(Catogries.ElectricityTools, 'screens', 7000)
+// const refrigerators = new Prodct(Catogries.ElectricityTools, 'refrigerators', 8000)
+// const WashingMachines = new Prodct(Catogries.ElectricityTools, 'WashingMachines', 10000)
+
+// console.log(screens.getCatogry())
+// console.log(screens.getName())
+// console.log(screens.getPrice())
+
+// console.log(refrigerators.getCatogry())
+// console.log(refrigerators.getName())
+// console.log(refrigerators.getPrice())
+
+// console.log(WashingMachines.getCatogry())
+// console.log(WashingMachines.getName())
+// console.log(WashingMachines.getPrice())
+
+// // #10 test warehouse
+// import { Brands } from "./task-8-test/enum/brand";
+// import { Prodct } from "./task-8-test/prodct";
+// import { Warechouse } from "./task-8-test/warehouse";
+
+// samsung
+// const screens = new Warechouse(Prodct, Brands.samsung, 20, 'Maradona Maghzan')
+// const refrigerators = new Warechouse(Prodct, Brands.samsung, 15, 'Maradona Maghzan')
+// const WashingMachines = new Warechouse(Prodct, Brands.samsung, 10, 'Maradona Maghzan')
+
+// lg
+// const screens = new Warechouse(Prodct, Brands.lg, 30, 'Maradona Maghzan')
+// const refrigerators = new Warechouse(Prodct, Brands.lg, 20, 'Maradona Maghzan')
+// const WashingMachines = new Warechouse(Prodct, Brands.lg, 20, 'Maradona Maghzan')
+
+// bosch
+// const screens = new Warechouse(Prodct, Brands.bosch, 0, 'Maradona Maghzan')
+// const refrigerators = new Warechouse(Prodct, Brands.bosch, 30, 'Maradona Maghzan')
+// const WashingMachines = new Warechouse(Prodct, Brands.bosch, 20, 'Maradona Maghzan')
+
+// fresh
+// const screens = new Warechouse(Prodct, Brands.fresh, 10, 'Maradona Maghzan')
+// const refrigerators = new Warechouse(Prodct, Brands.fresh, 30, 'Maradona Maghzan')
+// const WashingMachines = new Warechouse(Prodct, Brands.fresh, 15, 'Maradona Maghzan')
+
+// unionaire
+// const screens = new Warechouse(Prodct, Brands.unionaire, 15, 'Maradona Maghzan')
+// const refrigerators = new Warechouse(Prodct, Brands.unionaire, 15, 'Maradona Maghzan')
+// const WashingMachines = new Warechouse(Prodct, Brands.unionaire, 10, 'Maradona Maghzan')
+
+// console.log(screens.getCatogry())
+// console.log(screens.getName())
+// console.log(screens.getPrice())
+
+// console.log(refrigerators.getCatogry())
+// console.log(refrigerators.getName())
+// console.log(refrigerators.getPrice())
+
+// console.log(WashingMachines.getCatogry())
+// console.log(WashingMachines.getName())
+// console.log(WashingMachines.getPrice())
+
+// // #10 test stor
+// import { Warechouse } from "./task-8-test/warehouse";
+// import { Stor } from "./task-8-test/stor"
+
+// const maradonaStor = new Stor('Maradona', 'Midan maradona', 19011, Warechouse)
+
+// console.log(maradonaStor.getName())
+// console.log(maradonaStor.getAddrass())
+// console.log(maradonaStor.getPhoneNumber())
+// console.log(maradonaStor.getWarehouse())
